@@ -1,0 +1,259 @@
+:root {
+	--color-FFF: #FFF;
+	--color-EEE: #EEE;
+	--color-000: #000;
+	--color-BLUE: #D3EDFC;
+	--color-GREY: #B0AFAF;
+	--color-YELLOW: #FFFBD2;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hero__banner {
+	height: 400px;
+	background-color: var(--color-BLUE);
+}
+
+/*TABS*/
+.tabs {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter';
+}
+
+.tabs__radio {
+	display: none;
+}
+
+.tabs__content {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	order: 1;
+	display: none;
+	width: 100%;
+}
+
+.tabs__background {
+	width: 100%;
+	background-color: var(--color-EEE);
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: auto;
+
+}
+
+.tab__list {
+	max-height: fit-content;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	margin-bottom: 30px;
+
+}
+
+.tab__item {
+	max-height: fit-content;
+	width: 260px;
+	height: 30px;
+	background-color: var(--color-GREY);
+	border-radius: 4px;
+}
+
+.tabs__content .tab__list:not(:last-child) {
+	margin-right: 36px;
+}
+
+.tabs__radio:checked+.tabs__label {
+	background-color: var(--color-EEE);
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content {
+	display: block;
+}
+
+.tabs__label {
+	position: static;
+	cursor: pointer;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10.5px 30px;
+	background-color: #FFF;
+}
+
+.nav__items {
+	background-color: #FFF;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tabs__background {
+	display: flex;
+	min-width: fit-content;
+	padding: 30px 20px 0;
+	background-color: var(--color-EEE);
+}
+
+/* TABS (END) */
+
+/*SIDEBAR*/
+.sidebar {
+	cursor: pointer;
+	margin-bottom: -200px;
+	overflow: hidden;
+	background-color: #FFF;
+	border-radius: 8px;
+	flex-shrink: 0;
+	margin-left: auto;
+	position: relative;
+	top: -230px;
+	height: 970px;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+
+	.main-sb__content {
+		height: 200px;
+		width: 100%;
+		background-color: #FFFBD2;
+	}
+
+	.separator {
+		width: 100%;
+		height: 40px;
+		background-color: var(--color-GREY);
+	}
+}
+
+/*SIDEBAR (END)*/
+
+/*DELIVERY*/
+.delivery {
+	width: 100%;
+	padding: 50px 0 50px 20px;
+	background-color: #FFFBD2;
+
+	.delivery__header {
+		font-family: Inter;
+		color: var(--color-000);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	.delivery__list {
+		display: flex;
+		flex-direction: row;
+		overflow: scroll;
+		gap: 20px;
+
+		.delivery__item {
+			min-width: 250px;
+			min-height: 250px;
+			background-color: var(--color-BLUE);
+			padding: 20px 30px 20px 20px;
+
+			.delivery__link {
+				cursor: pointer;
+				display: flex;
+				flex-direction: column;
+
+				.delivery__descr {
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+/* Скрыл скролл, чтобы сделать по аналогии с макетом */
+/* .delivery__list::-webkit-scrollbar {
+	width: 0;
+} */
+
+/*DELIVERY (END)*/
+
+/* MORE */
+.more {
+	padding: 50px 0px 90px 20px;
+
+	.more-header {
+		color: var(--color-000);
+		font-family: Inter;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	.more-list {
+		display: flex;
+		flex-direction: row;
+		overflow: scroll;
+		gap: 20px;
+
+		.more-item {
+			width: 250px;
+			min-height: 250px;
+			background-color: var(--color-BLUE);
+
+			.more-link {
+				overflow: hidden;
+				min-width: 250px;
+				max-height: 250px; 
+				cursor: pointer;
+				display: flex;
+
+				.more__img {
+					min-width: 250px;
+				}
+			}
+		}
+	}
+}
+
+.more-list::-webkit-scrollbar {
+	width: 0;
+}
+
+/* MORE (END)*/
+
+/*FOOTER*/
+.footer {
+	margin: 0 auto;
+	padding: 15px 0;
+	background-color: var(--color-EEE);
+	justify-content: center;
+	text-align: center;
+
+	a {
+		color: var(--color-000);
+		font-family: Inter;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+	}
+}
+
+/*FOOTER (END)*/

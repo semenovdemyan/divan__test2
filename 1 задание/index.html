@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <!-- Шрифты так же можно подключить через локальные файлы, я этого делать не стал (есть образец на GIT) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <main class="container">
+    <section class="hero__banner">
+    </section>
+
+    <section class="tabs-section">
+      <div class="tabs">
+        <nav class="nav__items">
+          <input class="tabs__radio" type="radio" name="csstabs" id="tab1" checked>
+          <label class="tabs__label" for="tab1">Description</label>
+          <div class="tabs__content">
+            <div class="tabs__background">
+              <div class="wrapper">
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+              </div>
+              <div class="sidebar">
+                <div class="main-sb__content"></div>
+                <div class="separator"></div>
+              </div>
+            </div>
+          </div>
+
+          <input class="tabs__radio" type="radio" name="csstabs" id="tab2">
+          <label class="tabs__label" for="tab2">Delivery</label>
+          <div class="tabs__content">
+            <div class="tabs__background">
+              <div class="wrapper">
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+              </div>
+              <!-- Сайдбар было бы правильнее сделать одним элементом, но так мне показалось более адаптивной вёртска, если уменьшать размер вьюпорта.
+               У меня он прописан в каждом табе HTML-->
+              <div class="sidebar">
+                <div class="main-sb__content"></div>
+                <div class="separator"></div>
+              </div>
+            </div>
+            <section class="delivery">
+              <h2 class="delivery__header">About delivery</h2>
+              <ul class="delivery__list">
+                <li class="delivery__item"><a href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества факторов.
+                      Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения и&nbsp;тройного
+                      форсажа (Токийского дрифта) </p>
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества факторов.
+                      Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества факторов.
+                      Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества факторов.
+                      Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a target="_blank" href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества факторов.
+                      Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a target="_blank" href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества факторов.
+                      Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a target="_blank" href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества фаторов.
+                      к Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения
+                      и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a target="_blank" href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества фаторов.
+                      к Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения
+                      и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a target="_blank" href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества фаторов.
+                      к Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения
+                      и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+                <li class="delivery__item"><a target="_blank" href="https://github.com/semenovdemyan" class="delivery__link">
+                    <p class="delivery__descr">статус решения зависит от&nbsp;множества фаторов.
+                      к Доставка производится рейсами на&nbsp;машинах с&nbsp;учётом регулировщика движения
+                      и&nbsp;тройного
+                      форсажа (Токийского дрифта)</p>
+                  </a></li>
+              </ul>
+            </section>
+          </div>
+
+          <input class="tabs__radio" type="radio" name="csstabs" id="tab3">
+          <label class="tabs__label" for="tab3">Payments</label>
+
+          <div class="tabs__content">
+            <div class="tabs__background">
+              <div class="wrapper">
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+                <ul class="tab__list">
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                  <li class="tab__item"></li>
+                </ul>
+              </div>
+              <div class="sidebar">
+                <div class="main-sb__content"></div>
+                <div class="separator"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="more">
+      <h2 class="more-header">More products</h2>
+      <ul class="more-list">
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./divan2.png" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+        <li class="more-item"><a href="#" class="more-link"><img class="more__img" src="./img.jpg" alt="Диван"></a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <a target="_blank" href="https://github.com/semenovdemyan">&copy;&nbsp;Copyright</a>
+  </footer>
+</body>
+
+</html>
